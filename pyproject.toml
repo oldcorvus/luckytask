@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "LuckyTask"
+version = "0.1.0"
+description = "Helps to manage your tasks"
+authors = ["oldcorvus <moelcrow@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pydantic = "^2.7.4"
+pre-commit = "^3.7.1"
+
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.7.1"
+mypy = "^1.10.0"
+flake8 = "^7.1.0"
+isort = "^5.13.2"
+black = "^24.4.2"
+pylint = "^3.2.3"
+ruff = "^0.4.10"
+pytest = "^8.2.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
