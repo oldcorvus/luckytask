@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  redis:
+    image: "redis:6.2"
+    container_name: "lucky_task_redis"
+    ports:
+      - "6379:6379"
+
+  luckytask:
+    build: .
+    container_name: "lucky_task"
+    depends_on:
+      - redis
+    volumes:
+      - .:/app
