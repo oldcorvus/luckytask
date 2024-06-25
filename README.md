@@ -43,10 +43,15 @@ To list all tasks:
 luckytask list-tasks
 ```
 🐢 id='8e4d55a4-019a-4900-9099-458eca956d5a' name='Task 2' priority=1 description='Sample description' timestamp=1719275722.1838574
+
 🐢 id='70688bb5-c8d9-4df7-bca9-99f1390e4d44' name='Task 3' priority=1 description='Sample description' timestamp=1719275727.4264348
+
 🐢 id='b59ed13a-7660-441b-ace6-d5caa61bbb37' name='Task 1' priority=3 description='Sample description' timestamp=1719275714.860256
+
 🐢 id='cc77f464-dcb5-4536-a2c9-6b10d85fbef5' name='Task 5' priority=5 description='Sample description' timestamp=1719275737.764184
+
 🐢 id='776baa27-802d-4d66-af6c-57f08f3670da' name='Task 4' priority=8 description='Sample description' timestamp=1719275706.1597753
+
 🐢 id='f3b7da5f-4d3b-4dc1-9f43-68b1aef7988b' name='Task 6' priority=10 description='Sample description' timestamp=1719275745.6112974
 
 ### Get Tasks by Specific Priority
@@ -57,6 +62,7 @@ To get tasks by specific priority:
 luckytask get-by-priority 1
 ```
 🐢 id='8e4d55a4-019a-4900-9099-458eca956d5a' name='Task 2' priority=1 description='Sample description' timestamp=1719275722.1838574
+
 🐢 id='70688bb5-c8d9-4df7-bca9-99f1390e4d44' name='Task 3' priority=1 description='Sample description' timestamp=1719275727.4264348
 
 
@@ -68,6 +74,7 @@ To get tasks within a priority range:
 luckytask get-by-priority-range 2 5
 ```
 🐢 id='b59ed13a-7660-441b-ace6-d5caa61bbb37' name='Task 1' priority=3 description='Sample description' timestamp=1719275714.860256
+
 🐢 id='cc77f464-dcb5-4536-a2c9-6b10d85fbef5' name='Task 5' priority=5 description='Sample description' timestamp=1719275737.764184
 
 ### Delete a Task
@@ -143,8 +150,12 @@ Alternatively, you can use Docker Compose.
    docker-compose run luckytask luckytask list-tasks
    ```
    🐢 id='8e4d55a4-019a-4900-9099-458eca956d5a' name='Task 2' priority=1 description='Sample description' timestamp=1719275722.1838574
+
    🐢 id='70688bb5-c8d9-4df7-bca9-99f1390e4d44' name='Task 3' priority=1 description='Sample description' timestamp=1719275727.4264348
+
    🐢 id='b59ed13a-7660-441b-ace6-d5caa61bbb37' name='Updated Task' priority=3 description='Updated description' timestamp=1719275714.860256
+
    🐢 id='776baa27-802d-4d66-af6c-57f08f3670da' name='Task 4' priority=8 description='Sample description' timestamp=1719275706.1597753
+
    🐢 id='f3b7da5f-4d3b-4dc1-9f43-68b1aef7988b' name='Task 6' priority=10 description='Sample description' timestamp=1719275745.6112974
 
