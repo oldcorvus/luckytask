@@ -24,7 +24,7 @@ def get_by_priority_range(min_priority: int, max_priority: int) -> None:
     tasks = context.task_service.get_tasks_by_priority_range(min_priority, max_priority)
     if tasks:
         for task in tasks:
-            click.echo("{TURTLE_EMOJI} {task}")
+            click.echo(f"{TURTLE_EMOJI} {task}")
     else:
         click.echo(
             f"{TURTLE_EMOJI} No tasks found within the specified priority range."
